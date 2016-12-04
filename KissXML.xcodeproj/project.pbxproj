@@ -31,6 +31,8 @@
 		CA9DD5941DF44020009DD00C /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56A1DF43ECB009DD00C /* DDXMLNode.m */; };
 		CA9DD5951DF44020009DD00C /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56C1DF43ECB009DD00C /* DDXMLElement.m */; };
 		CA9DD5961DF44020009DD00C /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56E1DF43ECB009DD00C /* DDXMLDocument.m */; };
+		CA9DD6191DF44635009DD00C /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5761DF43ECB009DD00C /* DDXMLElementAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD61A1DF4463D009DD00C /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5731DF43ECB009DD00C /* NSString+DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,7 +174,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9DD6191DF44635009DD00C /* DDXMLElementAdditions.h in Headers */,
 				CA9DD5871DF43EEF009DD00C /* DDXMLPrivate.h in Headers */,
+				CA9DD61A1DF4463D009DD00C /* NSString+DDXML.h in Headers */,
 				CA9DD5911DF44008009DD00C /* DDXMLDocument.h in Headers */,
 				CA9DD5901DF44008009DD00C /* DDXMLElement.h in Headers */,
 				CA9DD58F1DF44008009DD00C /* DDXMLNode.h in Headers */,
@@ -586,6 +590,7 @@
 				CA9DD54A1DF43E67009DD00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA9DD5631DF43EAE009DD00C /* Build configuration list for PBXNativeTarget "KissXML-iOS" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +599,7 @@
 				CA9DD5651DF43EAE009DD00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
