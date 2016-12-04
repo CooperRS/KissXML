@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA9DD5781DF43ECB009DD00C /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5681DF43ECB009DD00C /* DDXMLPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA9DD5791DF43ECB009DD00C /* KissXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5691DF43ECB009DD00C /* KissXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD57A1DF43ECB009DD00C /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56A1DF43ECB009DD00C /* DDXMLNode.m */; };
+		CA9DD57B1DF43ECB009DD00C /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56B1DF43ECB009DD00C /* DDXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD57C1DF43ECB009DD00C /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56C1DF43ECB009DD00C /* DDXMLElement.m */; };
+		CA9DD57D1DF43ECB009DD00C /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56D1DF43ECB009DD00C /* DDXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD57E1DF43ECB009DD00C /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56E1DF43ECB009DD00C /* DDXMLDocument.m */; };
+		CA9DD57F1DF43ECB009DD00C /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56F1DF43ECB009DD00C /* DDXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5811DF43ECB009DD00C /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5711DF43ECB009DD00C /* DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5821DF43ECB009DD00C /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5731DF43ECB009DD00C /* NSString+DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5831DF43ECB009DD00C /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD5741DF43ECB009DD00C /* NSString+DDXML.m */; };
+		CA9DD5841DF43ECB009DD00C /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5761DF43ECB009DD00C /* DDXMLElementAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5851DF43ECB009DD00C /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD5771DF43ECB009DD00C /* DDXMLElementAdditions.m */; };
+		CA9DD5871DF43EEF009DD00C /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5681DF43ECB009DD00C /* DDXMLPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA9DD58D1DF44008009DD00C /* KissXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5691DF43ECB009DD00C /* KissXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD58E1DF44008009DD00C /* DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD5711DF43ECB009DD00C /* DDXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD58F1DF44008009DD00C /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56B1DF43ECB009DD00C /* DDXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5901DF44008009DD00C /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56D1DF43ECB009DD00C /* DDXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5911DF44008009DD00C /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9DD56F1DF43ECB009DD00C /* DDXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9DD5921DF44020009DD00C /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD5741DF43ECB009DD00C /* NSString+DDXML.m */; };
+		CA9DD5931DF44020009DD00C /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD5771DF43ECB009DD00C /* DDXMLElementAdditions.m */; };
+		CA9DD5941DF44020009DD00C /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56A1DF43ECB009DD00C /* DDXMLNode.m */; };
+		CA9DD5951DF44020009DD00C /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56C1DF43ECB009DD00C /* DDXMLElement.m */; };
+		CA9DD5961DF44020009DD00C /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9DD56E1DF43ECB009DD00C /* DDXMLDocument.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA9DD5431DF43E67009DD00C /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9DD5471DF43E67009DD00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA9DD55E1DF43EAE009DD00C /* KissXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KissXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9DD5611DF43EAE009DD00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA9DD5681DF43ECB009DD00C /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		CA9DD5691DF43ECB009DD00C /* KissXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML.h; sourceTree = "<group>"; };
+		CA9DD56A1DF43ECB009DD00C /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		CA9DD56B1DF43ECB009DD00C /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		CA9DD56C1DF43ECB009DD00C /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		CA9DD56D1DF43ECB009DD00C /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		CA9DD56E1DF43ECB009DD00C /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		CA9DD56F1DF43ECB009DD00C /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		CA9DD5711DF43ECB009DD00C /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		CA9DD5731DF43ECB009DD00C /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		CA9DD5741DF43ECB009DD00C /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		CA9DD5761DF43ECB009DD00C /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		CA9DD5771DF43ECB009DD00C /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9DD53F1DF43E67009DD00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9DD55A1DF43EAE009DD00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA9DD5371DF43E27009DD00C = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5661DF43EBD009DD00C /* KissXML */,
+				CA9DD5451DF43E67009DD00C /* KissXML-macOS */,
+				CA9DD55F1DF43EAE009DD00C /* KissXML-iOS */,
+				CA9DD5441DF43E67009DD00C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9DD5441DF43E67009DD00C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5431DF43E67009DD00C /* KissXML.framework */,
+				CA9DD55E1DF43EAE009DD00C /* KissXML.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9DD5451DF43E67009DD00C /* KissXML-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5471DF43E67009DD00C /* Info.plist */,
+			);
+			path = "KissXML-macOS";
+			sourceTree = "<group>";
+		};
+		CA9DD55F1DF43EAE009DD00C /* KissXML-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5611DF43EAE009DD00C /* Info.plist */,
+			);
+			path = "KissXML-iOS";
+			sourceTree = "<group>";
+		};
+		CA9DD5661DF43EBD009DD00C /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5721DF43ECB009DD00C /* Categories */,
+				CA9DD5751DF43ECB009DD00C /* Additions */,
+				CA9DD5691DF43ECB009DD00C /* KissXML.h */,
+				CA9DD5711DF43ECB009DD00C /* DDXML.h */,
+				CA9DD56B1DF43ECB009DD00C /* DDXMLNode.h */,
+				CA9DD56A1DF43ECB009DD00C /* DDXMLNode.m */,
+				CA9DD56D1DF43ECB009DD00C /* DDXMLElement.h */,
+				CA9DD56C1DF43ECB009DD00C /* DDXMLElement.m */,
+				CA9DD56F1DF43ECB009DD00C /* DDXMLDocument.h */,
+				CA9DD56E1DF43ECB009DD00C /* DDXMLDocument.m */,
+				CA9DD5671DF43ECB009DD00C /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		CA9DD5671DF43ECB009DD00C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5681DF43ECB009DD00C /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		CA9DD5721DF43ECB009DD00C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5731DF43ECB009DD00C /* NSString+DDXML.h */,
+				CA9DD5741DF43ECB009DD00C /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CA9DD5751DF43ECB009DD00C /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				CA9DD5761DF43ECB009DD00C /* DDXMLElementAdditions.h */,
+				CA9DD5771DF43ECB009DD00C /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA9DD5401DF43E67009DD00C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9DD57B1DF43ECB009DD00C /* DDXMLNode.h in Headers */,
+				CA9DD57F1DF43ECB009DD00C /* DDXMLDocument.h in Headers */,
+				CA9DD5821DF43ECB009DD00C /* NSString+DDXML.h in Headers */,
+				CA9DD5781DF43ECB009DD00C /* DDXMLPrivate.h in Headers */,
+				CA9DD5811DF43ECB009DD00C /* DDXML.h in Headers */,
+				CA9DD5841DF43ECB009DD00C /* DDXMLElementAdditions.h in Headers */,
+				CA9DD57D1DF43ECB009DD00C /* DDXMLElement.h in Headers */,
+				CA9DD5791DF43ECB009DD00C /* KissXML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9DD55B1DF43EAE009DD00C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9DD5871DF43EEF009DD00C /* DDXMLPrivate.h in Headers */,
+				CA9DD5911DF44008009DD00C /* DDXMLDocument.h in Headers */,
+				CA9DD5901DF44008009DD00C /* DDXMLElement.h in Headers */,
+				CA9DD58F1DF44008009DD00C /* DDXMLNode.h in Headers */,
+				CA9DD58E1DF44008009DD00C /* DDXML.h in Headers */,
+				CA9DD58D1DF44008009DD00C /* KissXML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA9DD5421DF43E67009DD00C /* KissXML-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9DD54B1DF43E67009DD00C /* Build configuration list for PBXNativeTarget "KissXML-macOS" */;
+			buildPhases = (
+				CA9DD53E1DF43E67009DD00C /* Sources */,
+				CA9DD53F1DF43E67009DD00C /* Frameworks */,
+				CA9DD5401DF43E67009DD00C /* Headers */,
+				CA9DD5411DF43E67009DD00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KissXML-macOS";
+			productName = "KissXML-macOS";
+			productReference = CA9DD5431DF43E67009DD00C /* KissXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA9DD55D1DF43EAE009DD00C /* KissXML-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9DD5631DF43EAE009DD00C /* Build configuration list for PBXNativeTarget "KissXML-iOS" */;
+			buildPhases = (
+				CA9DD5591DF43EAE009DD00C /* Sources */,
+				CA9DD55A1DF43EAE009DD00C /* Frameworks */,
+				CA9DD55B1DF43EAE009DD00C /* Headers */,
+				CA9DD55C1DF43EAE009DD00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KissXML-iOS";
+			productName = "KissXML-iOS";
+			productReference = CA9DD55E1DF43EAE009DD00C /* KissXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9DD5381DF43E27009DD00C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					CA9DD5421DF43E67009DD00C = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					CA9DD55D1DF43EAE009DD00C = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA9DD53B1DF43E27009DD00C /* Build configuration list for PBXProject "KissXML" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA9DD5371DF43E27009DD00C;
+			productRefGroup = CA9DD5441DF43E67009DD00C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9DD5421DF43E67009DD00C /* KissXML-macOS */,
+				CA9DD55D1DF43EAE009DD00C /* KissXML-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9DD5411DF43E67009DD00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9DD55C1DF43EAE009DD00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9DD53E1DF43E67009DD00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9DD57C1DF43ECB009DD00C /* DDXMLElement.m in Sources */,
+				CA9DD57E1DF43ECB009DD00C /* DDXMLDocument.m in Sources */,
+				CA9DD5851DF43ECB009DD00C /* DDXMLElementAdditions.m in Sources */,
+				CA9DD57A1DF43ECB009DD00C /* DDXMLNode.m in Sources */,
+				CA9DD5831DF43ECB009DD00C /* NSString+DDXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9DD5591DF43EAE009DD00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9DD5951DF44020009DD00C /* DDXMLElement.m in Sources */,
+				CA9DD5961DF44020009DD00C /* DDXMLDocument.m in Sources */,
+				CA9DD5941DF44020009DD00C /* DDXMLNode.m in Sources */,
+				CA9DD5931DF44020009DD00C /* DDXMLElementAdditions.m in Sources */,
+				CA9DD5921DF44020009DD00C /* NSString+DDXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA9DD53C1DF43E27009DD00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		CA9DD53D1DF43E27009DD00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		CA9DD5491DF43E67009DD00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "KissXML-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.KissXML-macOS";
+				PRODUCT_NAME = KissXML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA9DD54A1DF43E67009DD00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "KissXML-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.KissXML-macOS";
+				PRODUCT_NAME = KissXML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA9DD5641DF43EAE009DD00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "KissXML-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.KissXML-iOS";
+				PRODUCT_NAME = KissXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA9DD5651DF43EAE009DD00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "KissXML-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.KissXML-iOS";
+				PRODUCT_NAME = KissXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9DD53B1DF43E27009DD00C /* Build configuration list for PBXProject "KissXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9DD53C1DF43E27009DD00C /* Debug */,
+				CA9DD53D1DF43E27009DD00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9DD54B1DF43E67009DD00C /* Build configuration list for PBXNativeTarget "KissXML-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9DD5491DF43E67009DD00C /* Debug */,
+				CA9DD54A1DF43E67009DD00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA9DD5631DF43EAE009DD00C /* Build configuration list for PBXNativeTarget "KissXML-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9DD5641DF43EAE009DD00C /* Debug */,
+				CA9DD5651DF43EAE009DD00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9DD5381DF43E27009DD00C /* Project object */;
+}
